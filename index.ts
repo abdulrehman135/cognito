@@ -7,8 +7,8 @@ import { CognitoService } from './cognitoService'
 
 const loginTest = async function (user: string, password: string): Promise<void> {
   const cognito = CognitoService.instance(
-    process.env.CLIENT_ID ?? '',
-    process.env.USER_POOL_ID ?? ''
+    process.env.CLIENT_ID ?? '23si15egh9q0bne4uvsg06nv4',
+    process.env.USER_POOL_ID ?? 'us-east-1_haGqWPxAx'
   )
   log.error('loginTest')
   await synthetics.executeStep('Check login', async () => await cognito.login(user, password))
