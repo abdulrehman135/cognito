@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild ./index.ts --outfile=index.js --bundle --minify --external:Synthetics --external:SyntheticsLogger --platform=node"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +14,8 @@
     "amazon-cognito-srp": "^1.0.1",
     "amazon-user-pool-srp-client": "^1.0.4",
     "axios": "^0.26.0",
-    "cross-fetch": "^3.1.5"
+    "cross-fetch": "^3.1.5",
+    "esbuild": "^0.14.23"
   },
   "type": "module"
 }
