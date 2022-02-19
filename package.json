@@ -1,0 +1,17 @@
+{
+  "name": "cognito",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-srp": "^1.0.1",
+    "amazon-user-pool-srp-client": "^1.0.4",
+    "axios": "^0.26.0"
+  },
+  "type": "module"
+}
